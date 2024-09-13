@@ -1,0 +1,3 @@
+
+
+class Sedan extends Car{
