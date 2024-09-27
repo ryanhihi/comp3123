@@ -8,9 +8,10 @@ app.get('/', (req, res) => {
 });
 
 // Route for POST request on '/about'
-app.post('/about', (req, res) => {
+app.get('/about', (req, res) => {
     res.send('About us');
 });
+
 
 // Route for POST request on '/'
 app.post('/', (req, res) => {
