@@ -3,9 +3,13 @@ const app = express();
 const SERVER_PORT = process.env.port || 3000
 
 //http://localhost:3000/
-application.get('/', (req, res)=>{
+app.get('/', (req, res)=>{
     res.send('Hello world');
 })
+
+app.post('/about',(req, res)=>{
+    res.send('About us');}
+)
 
 app. post('/',(req, res)=>{
     res.send('POST - Hello world');
