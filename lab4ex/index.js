@@ -2,6 +2,13 @@ const express = require('express');
 const app = express();
 const SERVER_PORT = process.env.PORT || 3000;
 
+app.use(express.json());
+
+// Route for GET request on '/'
+app.get('/', (req, res) => {
+    res.send('Hello Lab4ex');
+});
+
 //A GET request to /hello that returns "Hello Express JS".
 app.get('/hello', (req, res) => {
     res.send('Hello Express JS');
