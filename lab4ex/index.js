@@ -28,14 +28,15 @@ app.get('/user', (req, res) => {
 
 //A POST request to /user with path parameters for firstname and lastname.
 
+// A POST request to /user with path parameters for firstname and lastname.
 app.post('/user/:firstname/:lastname', (req, res) => {
     const { firstname, lastname } = req.params;
-
     res.json({
         firstname: firstname,
         lastname: lastname
     });
 });
+
 
 // Start the server
 app.listen(SERVER_PORT, () => {
